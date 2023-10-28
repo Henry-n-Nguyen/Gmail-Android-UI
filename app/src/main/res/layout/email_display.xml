@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:id="@+id/imageview"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="120dp"
+        android:id="@+id/name"
+        android:layout_toEndOf="@id/imageview"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Name"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="160dp"
+        android:layout_below="@id/name"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-22dp"
+        android:layout_toEndOf="@id/name"
+        android:textColor="#a9a9a9"
+        tools:text="email@email.com" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#a9a9a9"
+        android:textSize="12sp"
+        tools:text="12:34 PM"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="36dp"
+        android:layout_below="@id/name"
+        android:layout_toEndOf="@id/imageview"
+        android:textColor="#a9a9a9"
+        tools:text="content" />
+
+    <CheckBox
+        android:id="@+id/favourite"
+        android:layout_width="24dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="28dp"
+        android:background="#00FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageview"
+        android:layout_marginTop="10dp"
+        android:background="#DAD8D8"/>
+
+</RelativeLayout>
